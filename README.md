@@ -5,7 +5,7 @@ It demonstrates how Django handles form submission, data storage, and data displ
 
 ---
 
-## ✅ Project Overview
+## Project Overview
 
 This application enables users to:
 
@@ -16,7 +16,7 @@ This application enables users to:
 
 ---
 
-## ✅ Features
+##  Features
 
 ### **Topic**
 - Insert topic name using a form  
@@ -34,7 +34,7 @@ This application enables users to:
 
 ---
 
-## ✅ Technologies Used
+## Technologies Used
 
 - Python  
 - Django Framework  
@@ -43,7 +43,7 @@ This application enables users to:
 
 ---
 
-## ✅ Application Structure
+## Application Structure
 
 - **Models:** Define Topic, Webpage, AccessRecord  
 - **Views:** Handle form submission and data processing  
@@ -54,7 +54,7 @@ This application enables users to:
 
 ---
 
-## ✅ How It Works
+## How It Works
 
 1. User fills in a form (Topic/Webpage/AccessRecord).  
 2. Django processes the request using the POST method.  
@@ -64,7 +64,7 @@ This application enables users to:
 
 ---
 
-## ✅ Purpose of the Project
+## Purpose of the Project
 
 This project helps users understand:
 
@@ -75,7 +75,7 @@ This project helps users understand:
 
 ---
 
-## ✅ Advantages
+## Advantages
 
 - Beginner-friendly  
 - Demonstrates Django MVT architecture  
@@ -85,35 +85,35 @@ This project helps users understand:
 
 ---
 
-## ✅ AccessRecord Display Page (Explanation)
+##  AccessRecord Display Page (Explanation)
 
 The **AccessRecord Display Page** displays all stored access records in a clear and organized table format. It allows users to easily view, validate, and understand the data submitted through the AccessRecord form.
 
-### ✅ Purpose of the Display Page
+### Purpose of the Display Page
 - To show all AccessRecord entries stored in the database  
 - To present the information in a structured and readable table  
 - To allow users to review previously submitted records  
 - To demonstrate how Django templates handle dynamic data rendering  
 
-### ✅ How the Page Works
+### How the Page Works
 - All AccessRecord objects are fetched from the database in the view  
 - These records are sent to the template through a context dictionary  
 - The template iterates over each record and displays it inside a table row  
 - Each row represents a single AccessRecord with relevant details  
 
-### ✅ Information Displayed in the Table
+### Information Displayed in the Table
 - **ID** → Unique identifier for each access record  
 - **Name** → The webpage associated with the access record  
 - **Author** → The person who created or accessed the record  
 - **Date** → The date when the record was added  
 
-### ✅ Importance of This Display Page
+### Importance of This Display Page
 - Provides a complete overview of stored access records  
 - Makes it easy to verify correct data entry  
 - Shows relational data between Webpage and AccessRecord  
 - Enhances user experience with organized data presentation  
 
-### ✅ Learning Outcome
+### Learning Outcome
 Understanding this page helps users learn:
 - How Django passes database data to templates  
 - How to loop over data and display it in tabular format  
