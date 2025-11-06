@@ -118,5 +118,6 @@ Understanding this page helps users learn:
 - How Django passes database data to templates  
 - How to loop over data and display it in tabular format  
 - How relationships between models are shown in UI  
-- How MVT architecture enables dynamic content rendering  
+- How MVT architecture enables dynamic content rendering
+  
 
