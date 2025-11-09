@@ -32,6 +32,23 @@ def insert_webpage(request):
             return HttpResponse('webpage is alredy exit')
     return render(request,'insert_webpage.html',d)
 
+def insert_mul_web(request):
+    QLTO=Topic.objects.all()
+    d={'QLTO':QLTO}
+    if request.method=='POST':
+        STL=request.POST.getlist('tn')
+        EWQS=Webpage.objects.none()
+
+        for TO in STL:
+            EWQS=EWQS|Webpage.objects.filter(topic_name=TO)
+        d={'EWQS':EWQS}
+        return render(request,'dispaly_mulwebpage.html',d)  
+    return render(request,'insert_mul_web.html',d)
+
+def checkbox(request):
+    QLTO=Topic.objects.all()
+    d={'QLTO':QLTO}
+    return render(request,'checkbox.html',d)
 
 
 def display_webpage(request):
